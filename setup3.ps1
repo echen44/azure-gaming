@@ -2,8 +2,6 @@ param (
     [string]$network = "",
     [string]$admin_username = "",
     [string]$admin_password = "",
-    [switch]$windows_update = $false,
-    [switch]$manual_install = $false
 )
 
 # function Get-UtilsScript ($script_name) {
@@ -299,7 +297,7 @@ function Install-Rainway {
     Write-Output "Cleaning up Rainway installation file"
     Remove-Item -Path $downloadedFile -Confirm:$false
 }
-
+InitDisks
 Update-Firewall
 Disable-Defender
 Disable-ScheduledTasks
@@ -307,8 +305,6 @@ Disable-IPv6To4
 Disable-InternetExplorerESC
 Edit-VisualEffectsRegistry
 Add-DisconnectShortcut
-
-InitDisks
 
 Install-Chocolatey
 Install-NSSM
@@ -321,7 +317,7 @@ Disable-TCC
 Enable-Audio
 Install-VirtualAudio
 Install-Steam
-Install-Parsec
-Install-Rainway
-Add-AutoLogin $admin_username $admin_password
+# Install-Parsec
+# Install-Rainway
+# Add-AutoLogin $admin_username $admin_password
 Restart-Computer

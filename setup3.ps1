@@ -311,7 +311,7 @@ Update-Firewall
 Disable-Defender
 Disable-ScheduledTasks
 Disable-IPv6To4
-Disable-InternetExplorerESC
+
 Edit-VisualEffectsRegistry
 Add-DisconnectShortcut
 
@@ -329,5 +329,6 @@ Install-Steam
 # Install-Parsec
 # Install-Rainway
 Parsec-Cloud-Preperation-Tool
+Disable-InternetExplorerESC
 # Add-AutoLogin $admin_username $admin_password
 # Restart-Computer

@@ -312,7 +312,6 @@ Disable-Defender
 Disable-ScheduledTasks
 Disable-IPv6To4
 
-Edit-VisualEffectsRegistry
 Add-DisconnectShortcut
 
 Install-Chocolatey
@@ -328,7 +327,6 @@ Install-VirtualAudio
 Install-Steam
 # Install-Parsec
 # Install-Rainway
-Parsec-Cloud-Preperation-Tool
-Disable-InternetExplorerESC
+# Parsec-Cloud-Preperation-Tool
 # Add-AutoLogin $admin_username $admin_password
 # Restart-Computer

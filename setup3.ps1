@@ -1,7 +1,7 @@
 param (
     [string]$network = "",
     [string]$admin_username = "",
-    [string]$admin_password = "",
+    [string]$admin_password = ""
 )
 
 # function Get-UtilsScript ($script_name) {
@@ -326,8 +326,8 @@ Disable-TCC
 Enable-Audio
 Install-VirtualAudio
 Install-Steam
-Install-Parsec
-Install-Rainway
+# Install-Parsec
+# Install-Rainway
 Parsec-Cloud-Preperation-Tool
 # Add-AutoLogin $admin_username $admin_password
 # Restart-Computer
